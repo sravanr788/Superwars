@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+}
+
+.footer {
+    margin-top: 80px;
+    text-align: center;
+    /* margin-left : 80px; */
+    font-size: 18px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px 10%;
+}
+
+.column1,
+.column3 {
+    display: flex;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.column1 {
+    justify-content: right;
+}
+
+.column3 {
+    justify-content: left;
+}
+
+.column2 {
+    padding-top: 15px;
+}
+
+.hero1,
+.hero2,
+.villain1,
+.villain2 {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 0px 10px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+}
+
+@media all and (max-width:500px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 40px;
+
+    }   
+}
+
+@media all and (max-width:280px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 40px;
+
+    }
+
+    .heroes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero1,
+    .hero2,
+    .villain1,
+    .villain2 {
+        margin: 10px;
+        ;
+    }
+
+    .villains {
+        display: flex;
+        flex-direction: column;
+    }
+}
