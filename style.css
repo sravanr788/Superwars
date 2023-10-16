@@ -5,10 +5,10 @@
 }
 
 .footer {
-    margin-top: 80px;
+    padding: 70px;
+    align-items: center;
     text-align: center;
-    /* margin-left : 80px; */
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .container {
@@ -26,22 +26,26 @@
 
 .column1 {
     justify-content: right;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .column3 {
     justify-content: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .column2 {
     padding-top: 15px;
 }
 
-.hero1,
-.hero2,
-.villain1,
-.villain2 {
-    border: 1px solid lightgray;
-    border-radius: 5px;
+
+.border {
+    border: 5px solid #e5e5e5;
+    border-radius: 10px;
     padding: 6px;
     margin: 0px 10px;
     font-weight: 500;
@@ -51,8 +55,7 @@
 
 p {
     text-align: center;
-    font-size: 45px;
-    font-family: 'Lato', sans-serif;
+    font-size: 55px;
 }
 
 @media all and (max-width:500px) {
@@ -73,18 +76,12 @@ p {
     .heroes {
         display: flex;
         flex-direction: column;
-    }
-
-    .hero1,
-    .hero2,
-    .villain1,
-    .villain2 {
         margin: 10px;
-        ;
     }
 
     .villains {
         display: flex;
         flex-direction: column;
+        margin: 10px;
     }
 }
